@@ -1,0 +1,20 @@
+---
+
+import MySiteLayout from "../../layouts/MySiteLayout.astro";
+import { getRelativeLocaleUrl } from 'astro:i18n';
+
+const dutchURL = getRelativeLocaleUrl("nl-nl", "");
+const spanishURL = getRelativeLocaleUrl("es", "");
+const portugueseURL = getRelativeLocaleUrl("pt-br", "");
+
+---
+
+<MySiteLayout page="Inicio" lang="nl-nl">
+    <p>Esto es en holandes</p>
+    <nav>
+		<a href="/">English</a>
+		<a href={dutchURL}>Dutch</a>
+		<a href={spanishURL}>Spanish</a>
+		<a href={portugueseURL}>Portuguese</a>
+	</nav>
+</MySiteLayout>
