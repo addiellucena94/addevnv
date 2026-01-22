@@ -1,14 +1,80 @@
 ---
 
 import MySiteLayout from "../../layouts/MySiteLayout.astro";
-import Cta from "../../components/Cta.astro"
+import Main from "../../components/Main.astro";
+import About from "../../components/About.astro";
+import Cta from "../../components/Cta.astro";
+import Steps from "../../components/Steps.astro";
+import Services from "../../components/Services.astro";
+import Footer from "../../components/Footer.astro";
 
 ---
 
-<MySiteLayout page="Inicio" lang="es">
-    <Cta 
-		title="Transforme su idea en una solución digital"
-		subtitle="Desarrollamos soluciones tecnológicas confiables para empresas que buscan eficiencia y crecimiento."
-		button="Contactanos"
+<MySiteLayout 
+	title="Desarrollo Web y Software a Medida para Empresas" 
+	lang="es"
+	cont="Desarrollamos páginas web, software y aplicaciones a medida para empresas. Soluciones escalables, seguras y eficientes."
+>
+    <Main 
+		title="Desarrollo Web y Software a Medida para Empresas"
+		subtitle="We build tailored websites, applications, and software solutions designed to improve efficiency, scalability, and business growth."
+		button="Contactanos Ahora"
+		declaimer="* La primera consulta es totalmente gratis y sin compromisos."
 	/>
+	<Services 
+		title="Nuestros Servicios" 
+		subtitle="Nuestros servicios de desarrollo estan diseñados y pensados para satisfacer las necesidades comerciales modernas" 
+		serOneTitle="Desarrollo Web" 
+		serOneDescription="Diseñamos y desarrollamos sitios web rapidos, modernos y optimizados para los principales motores de busqueda. Desde paginas web sencillas hasta paginas empresariales siempre con un enfoque en la usabilidad y el rendimiento." 
+		serTwoTitle="Desarrollo de Software" 
+		serTwoDescription="We create custom software solutions tailored to internal business processes, helping companies automate operations and improve productivity." 
+		serThreeTitle="Desarrollo Movil" 
+		serThreeDescription="We develop scalable web and mobile applications with a strong focus on security, stability, and user experience."
+		button="Conoce mas"
+	/>
+	<About 
+		title="Por que trabajar con nosotros?"
+		subtitle="We focus on delivering custom-built digital solutions designed for real business environments. Our work is based on clean, secure, and maintainable code, with a strong emphasis on performance, scalability, and long-term reliability. We follow structured processes and maintain clear communication throughout every stage of the project, ensuring predictable delivery and solutions that grow alongside your business."
+		button="Conoce mas"
+	/>
+	<Steps 
+		tag="paso a paso" 
+		title="Nuestro Proceso de Trabajo" 
+		subtitle="Un proceso de desarrollo estructurado y transparente es el primer paso para lograr grandes resultados" 
+		stepOneTitle="Analisis del Proyecto" 
+		stepOneDescription="We start by understanding your business objectives, technical requirements, and project scope. This phase allows us to identify key challenges, define expectations, and ensure that the proposed solution aligns with your operational and strategic goals." 
+		stepTwoTitle="Planificacion y Estructura" 
+		stepTwoDescription="Based on the analysis, we define the system architecture, technologies, and development roadmap. We establish milestones, timelines, and technical specifications to ensure a structured and efficient development process." 
+		stepThreeTitle="Desarrollo" 
+		stepThreeDescription="We develop the solution using modern, reliable technologies and industry best practices. Our focus is on writing clean, maintainable code while ensuring performance, security, and scalability throughout the development lifecycle." 
+		stepFourTitle="Entrega y Soporte" 
+		stepFourDescription="Once development is complete, we deliver a production-ready solution that has been tested for stability and performance. We also provide post-delivery support to ensure a smooth deployment and continued reliability."
+	/>
+	<Cta 
+		title="Convierte tus ideas en soluciones" 
+		subtitle="Desarrollamos soluciones tecnológicas confiables y escalables para empresas que buscan crecimiento a largo plazo."
+		button="Contactanos Ahora"
+	/>
+	<Footer 
+        description="AD DEV crea plataformas web de alta calidad, software a medida y aplicaciones escalables para empresas modernas. Nuestro objetivo es convertir ideas en soluciones digitales confiables que impulsen el crecimiento y el rendimiento."
+        tagTitleOne="Categorias"
+        service="Servicios"
+        about="Acerca de Nosotros"
+        blog="Blog"
+        tagTitleTwo="Redes Sociales"
+        tagTitleThree="Legalidad"
+        terms="Terminos de Servicio"
+        privacy="Politica de Privacidad"
+        copy="Todos los derechos reservados."
+    />
+	<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AD DEV",
+        "url": "https://addevnv.com",
+        "description": "Desarrollo Web y Software a Medida para Empresas",
+        "foundingDate": "2026"
+    }
+    </script>
 </MySiteLayout>

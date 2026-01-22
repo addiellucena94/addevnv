@@ -6,12 +6,32 @@ import About from "../components/About.astro";
 import Cta from "../components/Cta.astro";
 import Steps from "../components/Steps.astro";
 import Services from "../components/Services.astro";
+import Footer from "../components/Footer.astro";
 
 ---
 
-<MySiteLayout page="Home" lang="en" btnText="Contact Us">
-	<Main />
-	<Services />
+<MySiteLayout 
+	title="Custom Web & Software Development for Businesses" 
+	lang="en" 
+	cont="We build custom websites, software, and applications for businesses. Scalable, secure, and performance-driven digital solutions."
+>
+	<Main 
+		title="Custom Web and Software Development for Businesses"
+		subtitle="We build tailored websites, applications, and software solutions designed to improve efficiency, scalability, and business growth."
+		button="Contact Us"
+		declaimer="* The first consultation is completely free and without obligation."
+	/>
+	<Services 
+		title="Our Services" 
+		subtitle="Tailored digital development services designed to meet modern business needs" 
+		serOneTitle="Web Development" 
+		serOneDescription="We design and develop fast, modern, and search-engine-optimized websites. From landing pages to complex web systems, our solutions focus on usability, performance, and conversion." 
+		serTwoTitle="Software Development" 
+		serTwoDescription="We create custom software solutions tailored to internal business processes, helping companies automate operations and improve productivity." 
+		serThreeTitle="Application Development" 
+		serThreeDescription="We develop scalable web and mobile applications with a strong focus on security, stability, and user experience."
+		button="Learn more"
+	/>
 	<About 
 		title="Why Choose Us?"
 		subtitle="We focus on delivering custom-built digital solutions designed for real business environments. Our work is based on clean, secure, and maintainable code, with a strong emphasis on performance, scalability, and long-term reliability. We follow structured processes and maintain clear communication throughout every stage of the project, ensuring predictable delivery and solutions that grow alongside your business."
@@ -35,4 +55,26 @@ import Services from "../components/Services.astro";
 		subtitle="We develop reliable and scalable technology solutions for companies seeking long-term growth."
 		button="Contact Us"
 	/>
+	<Footer 
+        description="AD DEV builds high-quality web platforms, custom software, and scalable applications for modern businesses. Our goal is to turn ideas into reliable digital solutions that support growth and performance."
+        tagTitleOne="Category"
+        service="Services"
+        about="About"
+        blog="Blog"
+        tagTitleTwo="Social"
+        tagTitleThree="Legal"
+        terms="Terms of Service"
+        privacy="Privacy Policy"
+        copy="All rights reserved."
+    />
+	<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "AD DEV",
+        "url": "https://addevnv.com",
+        "description": "Custom web, software, and application development for businesses",
+        "foundingDate": "2026"
+    }
+    </script>
 </MySiteLayout>
