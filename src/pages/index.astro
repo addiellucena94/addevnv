@@ -12,7 +12,27 @@ import Services from "../components/Services.astro";
 <MySiteLayout page="Home" lang="en" btnText="Contact Us">
 	<Main />
 	<Services />
-	<About />
-	<Steps />
-	<Cta />
+	<About 
+		title="Why Choose Us?"
+		subtitle="We focus on delivering custom-built digital solutions designed for real business environments. Our work is based on clean, secure, and maintainable code, with a strong emphasis on performance, scalability, and long-term reliability. We follow structured processes and maintain clear communication throughout every stage of the project, ensuring predictable delivery and solutions that grow alongside your business."
+		button="Learn more"
+	/>
+	<Steps 
+		tag="step by step" 
+		title="How We Work" 
+		subtitle="A structured and transparent development process from start to finish" 
+		stepOneTitle="Project Analysis" 
+		stepOneDescription="We start by understanding your business objectives, technical requirements, and project scope. This phase allows us to identify key challenges, define expectations, and ensure that the proposed solution aligns with your operational and strategic goals." 
+		stepTwoTitle="Planning & Architecture" 
+		stepTwoDescription="Based on the analysis, we define the system architecture, technologies, and development roadmap. We establish milestones, timelines, and technical specifications to ensure a structured and efficient development process." 
+		stepThreeTitle="Development" 
+		stepThreeDescription="We develop the solution using modern, reliable technologies and industry best practices. Our focus is on writing clean, maintainable code while ensuring performance, security, and scalability throughout the development lifecycle." 
+		stepFourTitle="Delivery & Support" 
+		stepFourDescription="Once development is complete, we deliver a production-ready solution that has been tested for stability and performance. We also provide post-delivery support to ensure a smooth deployment and continued reliability."
+	/>
+	<Cta 
+		title="Turn your idea into a digital solution" 
+		subtitle="We develop reliable and scalable technology solutions for companies seeking long-term growth."
+		button="Contact Us"
+	/>
 </MySiteLayout>
