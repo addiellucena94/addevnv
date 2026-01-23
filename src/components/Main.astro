@@ -18,14 +18,14 @@ const { title, subtitle, button, declaimer } = Astro.props;
             <p class="mb-6 text-base font-thin tracking-wide text-gray-300 md:text-lg">
                 { subtitle }
             </p>
-            <form class="flex justify-center items-center w-full mb-4 md:flex-row md:px-16">
+            <a href="mailto:addiellucena94@gmail.com" class="flex justify-center items-center w-full mb-4 md:flex-row md:px-16">
                 <button
                     type="submit"
                     class="inline-flex items-center justify-center w-full h-12 px-10 font-medium tracking-wide text-white transition duration-200 rounded shadow-md md:w-auto bg-blue-700 hover:bg-blue-900 focus:shadow-outline focus:outline-none cursor-pointer"
                 >
                     { button }
                 </button>
-            </form>
+            </a>
             <p class="max-w-md mb-10 text-xs font-thin tracking-wide text-gray-400 sm:text-sm sm:mx-auto md:mb-16">
                 { declaimer }
             </p>
